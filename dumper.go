@@ -45,7 +45,3 @@ func (r *fileDump) DumpObj(obj interface{}) error {
 	_, err = r.Write(data)
 	return err
 }
-
-func (r *fileDump) Close() error {
-	return r.File.Close()
-}
